@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Quotes Generator Js Program !!</title>
+    <style>
+        body {
+            background: url(bg.jpg)no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .container {
+            background: white;
+            width: 600px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+            border: 1px solid silver;
+            border-radius: 10px;
+            box-shadow: 4px 4px 0px 0px rgba(226, 161, 62, 0.329);
+        }
+
+        .container h1 {
+            position: absolute;
+            top: 15%;
+            text-align: center;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .container button {
+            position: absolute;
+            top: 70%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 id="quotes">
+            Click Generate To Get Quote :)
+        </h1>
+        <button onclick="generate()" type="button" id="generateBtn" class="btn btn-primary">Generate</button>
+    </div>
+
+    <script>
+        const generate = () => {
+
+            var quotes = ["If you realize you made a mistake with the way you've been living your life, you just have to take the next moment and start over.",
+                "God would never put us through all this suffering if he didn't think we could bear it.",
+                "People can't live for the future without accepting reality.",
+                "Unnecessary thoughts will only interfere with your plays.",
+                "Human beings are strong because we have the ability to change ourselves.",
+                "Ruling over death means ruling over life. Death is the climax of life. To have the best death, you must honor life. ",
+                "If people could become friends simply by sharing bread and salt, life would be simpler.",
+                "If I ignore a friend I have the ability to help, wouldn't I be betraying him?",
+                "If people scrutinize you, just ignore them and do whatever you want to do.",
+                "The words you've said cannot be taken back. So you must take action to paint over what you have already said.",
+                "The most certain way to succeed is to try one more time. Our greatest weakness lies in giving up.",
+                "The ideal tool for controlling people is fear. And nothing overwhelms people more than an unseen fear.",
+                "You shouldn't judge people by how they look.",
+                "The things we can't obtain are the most beautiful ones.",
+                "We have no need for the past. All we need are the present and the future.",
+                "What is really wicked... is judging people without even trying to get to know them!",
+                "The time when you're happy is also the time when you're afraid that the happiness will end.",
+                "The only one who should decide which path to follow is yourself.",
+                "Not fighting frantically for your life is all right, too. The important thing is… to decide on your own what you should do. ",
+                "You yourself have to change first, or nothing will change for you!"];
+
+            var quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+            document.getElementById('quotes').innerHTML = quote;
+        }
+
+    </script>
+</body>
+
+</html>
