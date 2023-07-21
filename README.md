@@ -1,2 +1,1 @@
-# bgColorChange
-This is a page in which , on every click the page generates a random color and also provides the hex code for it
+in this reposetory i am just uploading random short javascript projects that i am making in my journey of learning of javascript :)
